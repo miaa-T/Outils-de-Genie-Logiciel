@@ -1,4 +1,4 @@
-package com.tests;
+package com.test;
 
 import com.example.dao.*;
 import com.example.entity.User;
@@ -7,26 +7,27 @@ import com.example.entity.ParkingPlace;
 import com.example.entity.PlaceStatus;
 import com.example.entity.Reservation;
 import com.example.entity.ReservationStatus;
-
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
 import java.util.Date;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.when;
 
+import org.mockito.Mockito;
 
 import java.sql.Connection;
 import java.util.Date;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ReservationDaoTest {
     private static DatabaseConnection DBconnection;
     private static Connection connection;
     private static ReservationDao reservationdao;
+    private static Reservation Reservation1;
 
     @BeforeAll
     //pour créer une connexion vers la base de données.
-    public void init() {
+    public static void init() {
         DBconnection = new DatabaseConnection("sa", "", "org.h2.Driver", "jdbc:h2:mem:test");
         connection = DBconnection.connect();
         DBconnection.createDb(connection);
@@ -65,7 +66,7 @@ public class ReservationDaoTest {
         parkingPlaceDao.insertParkingPlace(placeP);
 
 
-        Reservation Reservation1 = new Reservation();
+        Reservation1 = new Reservation();//créer une nouvelle reservation
         Reservation1.setReservationId(1);
         Reservation1.setStartTime(new Date(2023,10,13));
         Reservation1.setEndTime(new Date(2023,10,16));
@@ -80,7 +81,20 @@ public class ReservationDaoTest {
 
     }
     @Test
-    public void insertReservation() {
-        assertEquals(reservationdao.getReservationById(1).getUser().getUserId(),1);
+    void insertReservation() {
+        assertEquals(reservationdao.getReservationById(1).getReservationId(),1);
+    }
+    @Test
+    void updateReservationStatus(){
+        reservationdao.updateReservationStatus(1,ReservationStatus.PENDING);
+        assertEquals(reservationdao.getReservationById(1).getStatus(),ReservationStatus.PENDING);
+    }
+    @Test
+    void getReservationById(){
+        reservationdao = Mockito.mock(ReservationDao.class);
+        //On doit configure le mock reservationdao pour qu'il retourne une valeur spécifique lorsque la méthode getReservationById est appelée avec l'argument 1.
+        when(reservationdao.getReservationById(1)).thenReturn(Reservation1);
+        Reservation expected = reservationdao.getReservationById(1);
+        assertEquals(1,expected.getReservationId());
     }
 }
