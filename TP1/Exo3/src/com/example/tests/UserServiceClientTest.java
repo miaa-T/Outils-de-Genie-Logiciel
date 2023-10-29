@@ -18,7 +18,7 @@ public class UserServiceClientTest {
 
     private UserServiceClient userServiceClient;
     private Endpoint mockEndpoint;
-    private final String githubApiUrl = "https://api.github.com/users/testuser";
+    private final String githubApiUrl = "https://api.github.com/users/Mahdia-toubal";
 
     @Test
     public void getUserUnitTest() throws URISyntaxException, IOException, InterruptedException {
@@ -30,6 +30,7 @@ public class UserServiceClientTest {
         when(mockResponse.body()).thenReturn(mockResponseBody);
         when(mockResponse.statusCode()).thenReturn(200);
         when(mockEndpoint.getResponse(githubApiUrl)).thenReturn(mockResponse);
+        // we can get rid of it , just to verify
 
         GitHubResponse expectedResponse = new GitHubResponse();
         GitHubUser expectedUser = new GitHubUser();
@@ -55,7 +56,7 @@ public class UserServiceClientTest {
         expectedResponse.setStatusCode(200);
         expectedResponse.setGitHubUser(expectedUser);
 
-        GitHubResponse actualResponse = userServiceClient.getUser("https://api.github.com/users/testuser");
+        GitHubResponse actualResponse = userServiceClient.getUser("https://api.github.com/users/Mahdia-toubal");
 
         assertEquals(expectedResponse.getStatusCode(), actualResponse.getStatusCode());
         assertEquals(expectedResponse.getGitHubUser().getName(), actualResponse.getGitHubUser().getName());
@@ -68,10 +69,10 @@ public class UserServiceClientTest {
         userServiceClient = new UserServiceClient();
         Endpoint endpoint = new Endpoint(); // integration = on a pas besoin des mocks
         userServiceClient.setEndpoint(endpoint);
-        String validGitHubUserUrl = "https://api.github.com/users/etudiant";
+        String validGitHubUserUrl = "https://api.github.com/users/Mahdia-toubal";
         GitHubResponse response = userServiceClient.getUser(validGitHubUserUrl);
 
-        assertNotNull(response);
+        assertNotNull(response); // repetettive
         assertNotNull(response.getGitHubUser());
         assertEquals(200, response.getStatusCode());
     }

@@ -75,7 +75,7 @@ public class ReservationManagerTest {
         ReservationStatus Rsta = ReservationStatus.values()[0];
         Reservation1.setStatus(Rsta);
 
-        //creer un mock reservation
+        //creer un mock reservationdao
         reservationdao = Mockito.mock(ReservationDao.class);
         reservationdao.setConn(connection);
         //creer un mock parking place manager
@@ -89,7 +89,7 @@ public class ReservationManagerTest {
     public void createReservationTest(){
         when(iParkingPlaceManager.isAvailable(1,sd,ed)).thenReturn(true);
         reservationManager.createReservation(Reservation1);
-        //on verifie si les methode insertReservation(Reservation1) et "updateStatus(1, PlaceStatus.RESERVED)" ont ete appelee
+        //on verifie si les methodes insertReservation(Reservation1) et "updateStatus(1, PlaceStatus.RESERVED)" ont ete appelee
         Mockito.verify(reservationdao).insertReservation(Reservation1);
         Mockito.verify(iParkingPlaceManager).updateStatus(1, PlaceStatus.RESERVED);
     }

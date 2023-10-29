@@ -12,6 +12,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import java.util.Date;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.Mockito.when;
 
 import org.mockito.Mockito;
@@ -92,9 +93,10 @@ public class ReservationDaoTest {
     @Test
     void getReservationById(){
         reservationdao = Mockito.mock(ReservationDao.class);
-        //On doit configure le mock reservationdao pour qu'il retourne une valeur spécifique lorsque la méthode getReservationById est appelée avec l'argument 1.
+        //On doit configurer le mock reservationdao pour qu'il retourne une valeur spécifique lorsque la méthode getReservationById est appelée avec l'argument 1.
         when(reservationdao.getReservationById(1)).thenReturn(Reservation1);
         Reservation expected = reservationdao.getReservationById(1);
+        assertNotNull(expected);
         assertEquals(1,expected.getReservationId());
     }
 }

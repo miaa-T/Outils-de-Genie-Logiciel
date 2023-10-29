@@ -96,7 +96,7 @@ public class ReservationManagerTest2 {
         //creer un reservation manager ayant reservationdao et iParkingPlaceManager
         reservationManager = new ReservationManager();
         reservationManager.setReservationDao(reservationdao);
-        reservationManager.setiPlaceManager(iParkingPlaceManager);
+        reservationMana-èger.setiPlaceManager(iParkingPlaceManager);
     }
     @Test
     public void cancelReservationTest() {
