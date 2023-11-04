@@ -6,12 +6,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.time.Duration;
-
 import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-
 public class secondtests {
 
     private static WebDriver driver;
@@ -32,7 +29,7 @@ public class secondtests {
             assertEquals(results.getText(), "Les identifications sont erronées");
         }
         @Test
-        void testAjouterStag2(){
+        public void testAjouterStag2(){
             WebDriver driver = new FirefoxDriver();
             driver.get("http://51.83.167.193:8080/.");
             WebElement username= driver.findElement(By.id("username"));
