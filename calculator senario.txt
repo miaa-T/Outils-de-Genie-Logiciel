@@ -1,0 +1,8 @@
+Feature: Calcul du déterminant d'une matrice 3x3
+  Scenario: Calcul du déterminant d'une matrice 3x3
+    Given une matrice 3x3
+      | 2 | 1 | 1 |
+      | 1 | 3 | 2 |
+      | 1 | 0 | 0 |
+    When je calcule le déterminant de la matrice
+    Then le déterminant est 14

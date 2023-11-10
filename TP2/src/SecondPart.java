@@ -5,7 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.time.Duration;
 
 import static org.junit.Assert.assertEquals;
@@ -21,33 +20,29 @@ public class SecondPart {
         driver = new FirefoxDriver();
         driver.get("http://51.83.167.193:8080/.");
         loginPage = new LoginPage(driver);
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
-        WebElement results =
-                wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Modifier")));
-        assertEquals(results.getClass(), "btn btn-primary");
-        ajouterStagiairePage = new AjouterStagiairePage(driver);
-
-        // Login before all tests
         loginPage.login("nabil", "test");
     }
 
 
     @Test
     public void testAuthentication() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
-        WebElement results =
-                wait.until(ExpectedConditions.presenceOfElementLocated(By.name("lastName")));
+
+        WebElement results=loginPage.verifyLogin1();
         assertEquals(results.getTagName(), "input");
     }
 
+
     @Test
     public void testAjouterStagiaire() {
-        ajouterStagiairePage.ajouterStagiaire("LMMM", "FFF", "addressss", "2002-12-04", "DZA", "cityy",
+        ajouterStagiairePage = new AjouterStagiairePage(driver);
+        WebElement ajouter = driver.findElement(By.linkText("Nouveau Stagiaire"));
+        ajouter.click();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        Stagiaire stag= new Stagiaire("Nom","Prenom" , "addressss", "2002-12-04", "DZA", "cityy",
                 "1", "mail@gmail.com", "+213012304560789", "ااا", "ااا", "مممم");
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
-        WebElement results =
-                wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Modifier")));
-        assertEquals(results.getClass(), "btn btn-primary");
+        ajouterStagiairePage.ajouterStagiaire(stag);
+        WebElement results= ajouterStagiairePage.verify1();
+        assertEquals(results.getTagName(), "a");
     }
 
 }

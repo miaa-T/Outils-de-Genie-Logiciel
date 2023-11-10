@@ -1,45 +1,56 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class AjouterStagiairePage {
-    private final WebDriver driver;
+import java.time.Duration;
+
+import static org.junit.Assert.assertEquals;
+
+public class AjouterStagiairePage extends PageObject  {
+    @FindBy(id="lastName") WebElement lastnameElement;
+    @FindBy(id="firstName") WebElement firstnameElement;
+    @FindBy(id="address") WebElement addressElement;
+    @FindBy(id="civility") WebElement civilityElement;
+    @FindBy(id="txtDate") WebElement dateElement;
+    @FindBy(id="birthCity") WebElement birthCityElement;
+    @FindBy(id="email") WebElement emailElement;
+    @FindBy(id="phone") WebElement phoneElement;
+    @FindBy(id="lastNameAr") WebElement lastnameArElement;
+    @FindBy(id="firstNameAr") WebElement firstnameArElement;
+    @FindBy(id="birthCityAr") WebElement birthCityArElement;
+    @FindBy(tagName="button") WebElement val;
+    @FindBy(partialLinkText="Modifier") WebElement modif;
+
 
     public AjouterStagiairePage(WebDriver driver) {
-        this.driver = driver;
+        super(driver);
     }
 
-    public void ajouterStagiaire(String lastName, String firstName, String address, String date, String countryCode,
-                                 String birthCity, String companyId, String email, String phone, String lastNameAr,
-                                 String firstNameAr, String birthCityAr) {
-        Select civility = new Select(driver.findElement(By.id("civility")));
+    public void ajouterStagiaire(Stagiaire stagiaire) {
+        Select civility = new Select(civilityElement);
         civility.selectByValue("Mme");
-        WebElement lastnameElement = driver.findElement(By.id("lastName"));
-        lastnameElement.sendKeys(lastName);
-        WebElement firstnameElement = driver.findElement(By.id("firstName"));
-        firstnameElement.sendKeys(firstName);
-        WebElement addressElement = driver.findElement(By.id("address"));
-        addressElement.sendKeys(address);
-        WebElement dateElement = driver.findElement(By.id("txtDate"));
-        dateElement.sendKeys(date);
+        lastnameElement.sendKeys(stagiaire.getLastName());
+        firstnameElement.sendKeys(stagiaire.getFirstName());
+        addressElement.sendKeys(stagiaire.getAddress());
+        dateElement.sendKeys(stagiaire.getDate());
         Select countryCodeSelect = new Select(driver.findElement(By.id("birthCountry.countryCode")));
-        countryCodeSelect.selectByValue(countryCode);
-        WebElement birthCityElement = driver.findElement(By.id("birthCity"));
-        birthCityElement.sendKeys(birthCity);
+        countryCodeSelect.selectByValue(stagiaire.getCountryCode());
+        birthCityElement.sendKeys(stagiaire.getBirthCity());
         Select company = new Select(driver.findElement(By.id("idCompany")));
-        company.selectByValue(companyId);
-        WebElement emailElement = driver.findElement(By.id("email"));
-        emailElement.sendKeys(email);
-        WebElement phoneElement = driver.findElement(By.id("phone"));
-        phoneElement.sendKeys(phone);
-        WebElement lastnameArElement = driver.findElement(By.id("lastNameAr"));
-        lastnameArElement.sendKeys(lastNameAr);
-        WebElement firstnameArElement = driver.findElement(By.id("firstNameAr"));
-        firstnameArElement.sendKeys(firstNameAr);
-        WebElement birthCityArElement = driver.findElement(By.id("birthCityAr"));
-        birthCityArElement.sendKeys(birthCityAr);
-        WebElement val = driver.findElement(By.tagName("button"));
+        company.selectByValue(stagiaire.getCompanyId());
+        emailElement.sendKeys(stagiaire.getEmail());
+        phoneElement.sendKeys(stagiaire.getPhone());
+        lastnameArElement.sendKeys(stagiaire.getLastName());
+        firstnameArElement.sendKeys(stagiaire.getFirstNameAr());
+        birthCityArElement.sendKeys(stagiaire.getBirthCityAr());
         val.click();
+    }
+    public WebElement verify1(){
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+        return wait.until(ExpectedConditions.visibilityOf(modif));
     }
 }

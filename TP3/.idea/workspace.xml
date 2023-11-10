@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fa561bfb-f5b1-4632-a950-9b0b7a06ba4b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/features/AjoutStag.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/features/authentification.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geckodriver.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/async-http-client-2.12.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/async-http-client-netty-utils-2.12.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/auto-common-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/auto-service-1.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/auto-service-annotations-1.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/byte-buddy-1.14.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/checker-qual-3.12.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/commons-exec-1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/error_prone_annotations-2.11.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/failsafe-3.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/failureaccess-1.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/guava-31.1-jre.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/j2objc-annotations-1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jakarta.activation-1.2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jcommander-1.82.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jsr305-3.0.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jtoml-2.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/netty-buffer-4.1.90.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/netty-codec-4.1.90.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/netty-codec-http-4.1.90.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/netty-codec-socks-4.1.60.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/netty-common-4.1.90.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/netty-handler-4.1.90.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/netty-handler-proxy-4.1.60.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/netty-reactive-streams-2.0.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/netty-resolver-4.1.90.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/netty-transport-4.1.90.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/netty-transport-classes-epoll-4.1.90.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/netty-transport-classes-kqueue-4.1.90.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/netty-transport-native-epoll-4.1.90.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/netty-transport-native-kqueue-4.1.90.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/netty-transport-native-unix-common-4.1.90.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/opentelemetry-api-1.24.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/opentelemetry-api-events-1.24.0-alpha.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/opentelemetry-api-logs-1.24.0-alpha.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/opentelemetry-context-1.24.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/opentelemetry-exporter-logging-1.24.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/opentelemetry-sdk-1.24.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/opentelemetry-sdk-common-1.24.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/opentelemetry-sdk-extension-autoconfigure-1.24.0-alpha.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/opentelemetry-sdk-extension-autoconfigure-spi-1.24.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/opentelemetry-sdk-logs-1.24.0-alpha.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/opentelemetry-sdk-metrics-1.24.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/opentelemetry-sdk-trace-1.24.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/opentelemetry-semconv-1.24.0-alpha.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/reactive-streams-1.0.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/selenium-api-4.8.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/selenium-chrome-driver-4.8.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/selenium-chromium-driver-4.8.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/selenium-devtools-v109-4.8.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/selenium-devtools-v110-4.8.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/selenium-devtools-v111-4.8.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/selenium-devtools-v85-4.8.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/selenium-edge-driver-4.8.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/selenium-firefox-driver-4.8.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/selenium-http-4.8.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/selenium-ie-driver-4.8.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/selenium-java-4.8.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/selenium-json-4.8.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/selenium-manager-4.8.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/selenium-remote-driver-4.8.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/selenium-safari-driver-4.8.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/selenium-support-4.8.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/slf4j-api-1.7.30.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AjouterStagiairePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FirstPart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MyStepdefs2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SecTestPart2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SecondPart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Stagiaire.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reports.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/secondtests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/testing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OGL.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP2/out/production/TP2/AjouterStagiairePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TP2/out/production/TP2/AjouterStagiairePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP2/out/production/TP2/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TP2/out/production/TP2/LoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP2/out/production/TP2/SecondPart.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TP2/out/production/TP2/SecondPart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP2/src/AjouterStagiairePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TP2/src/AjouterStagiairePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP2/src/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TP2/src/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP2/src/PageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TP2/src/PageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP2/src/SecTestPart2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TP2/src/SecTestPart2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP2/src/SecondPart.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TP2/src/SecondPart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP2/src/Stagiaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TP2/src/Stagiaire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/TP3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exo1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TP3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/calculator.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Calculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyStepdefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyStepdefs.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2XlALVHVAW1LYUDMAga425zGtJq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.5248691" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager" selected="JUnit.testing">
+    <configuration name="Feature: AjoutStag" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/features/AjoutStag.feature" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="TP3" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: AjoutStag" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: authentification" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/features/authentification.feature" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="TP3" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: authentification" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Login with invalid credentials" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/features/authentification.feature" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="TP3" />
+      <option name="NAME_FILTER" value="^Login with invalid credentials$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Login with invalid credentials$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Login with invalid credentials" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="secondtests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TP3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="secondtests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TP3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="testing" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.testing" />
+        <item itemvalue="Cucumber Java.Feature: AjoutStag" />
+        <item itemvalue="JUnit.secondtests" />
+        <item itemvalue="Cucumber Java.Feature: authentification" />
+        <item itemvalue="Cucumber Java.Scenario: Login with invalid credentials" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fa561bfb-f5b1-4632-a950-9b0b7a06ba4b" name="Changes" comment="" />
+      <created>1699193238673</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699193238673</updated>
+      <workItem from="1699193240079" duration="1819000" />
+      <workItem from="1699197686477" duration="213000" />
+      <workItem from="1699570202174" duration="555000" />
+      <workItem from="1699611234118" duration="8253000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
